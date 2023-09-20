@@ -1,27 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Library</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <script src="main.js" defer></script>
 
     <div class="main-wrapper">
-        <div class="header">
-            <h1>Your Reading List</h1>
-        </div>
-        <div class="sub-header">
-            <button>+ Add Book</button>
-        </div>
+      <div class="header">
+        <h1>Your Reading List</h1>
+      </div>
+      <!-- <div class="sub-header"></div> -->
 
-        <main>
-        </main>
-        
+      <main>
+        <form>
+          <div class="form-row">
+            <label for="title">Title</label>
+            <input type="text" name="title" placeholder="Book title" />
+          </div>
+          <div class="form-row">
+            <label for="author">Author</label>
+            <input type="text" name="author" placeholder="Joe Doe" />
+          </div>
+          <div class="form-row">
+            <label for="read">Read?</label>
+            <input type="checkbox" name="read" />
+          </div>
+          <div class="form-row">
+            <button>+ Add Book</button>
+          </div>
+        </form>
+      </main>
     </div>
-    
-</body>
+  </body>
 </html>

@@ -32,13 +32,41 @@ body {
   padding-top: 30px;
 }
 
-.sub-header button {
-  padding: 15px 25px;
-  font-size: x-large;
+button {
+  padding: 10px 12px;
+  font-size: large;
   cursor: pointer;
 }
 
 main {
   /* height: calc(70vh - 20px); */
   height: 70vh;
+  display: grid;
+  grid-template-columns: 20% 80%;
 }
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-left: 25px;
+}
+
+form label {
+  font-size: 16pt;
+}
+
+form input {
+  padding: 12px 20px;
+}
+
+form .form-row {
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+  padding: 10px;
+}
+
+form .form-row:last-child {
+  margin-top: 90px;
+  /* justify-content: baseline; */
+} 
