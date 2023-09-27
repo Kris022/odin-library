@@ -69,4 +69,10 @@ form .form-row {
 form .form-row:last-child {
   margin-top: 90px;
   /* justify-content: baseline; */
-} 
+}
+
+.book-grid-wrapper {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 50% 50%;
+}
