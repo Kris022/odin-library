@@ -8,6 +8,7 @@
 body {
   font-family: "roboto", sans-serif;
   background-color: #e3e3e3;
+  overflow: hidden;
 }
 
 .main-wrapper {
@@ -74,5 +75,21 @@ form .form-row:last-child {
 .book-grid-wrapper {
   display: grid;
   grid-template-columns: 33% 33% 33%;
+  /* Fix what happens after two rows */
   grid-template-rows: 50% 50%;
+  padding: 10px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  gap: 10px;
+}
+
+.book-card {
+  background-color: aliceblue;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 15px;
+
+}
+
+.book-card h1 {
 }
