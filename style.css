@@ -25,6 +25,17 @@ body {
   box-sizing: 0 10px 8px 0 rgba(0, 0, 0, 0.1);
 }
 
+.header h1 {
+  transition: 0.3s;
+}
+
+.header h1:hover {
+  cursor: default;
+  z-index: 0;
+  box-shadow: 60px 30px 60px red, 60px -30px 60px blue, -60px -30px 60px green,
+    -60px 30px 60px purple;
+}
+
 .sub-header {
   height: 10vh;
   display: flex;
@@ -88,8 +99,29 @@ form .form-row:last-child {
   padding: 20px;
   box-sizing: border-box;
   border-radius: 15px;
-
+  transition: 0.3s;
 }
 
-.book-card h1 {
+.book-card:hover {
+  margin-block: -5px;
+  margin-inline: -5px;
+  cursor: pointer;
+  box-shadow: 3px 3px;
+}
+
+.book-card h3 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.book-card h4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.book-card h6 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 0.75rem;
 }
