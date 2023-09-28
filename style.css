@@ -1,127 +1,52 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Onest:wght@100;200;300;400;500;600&display=swap");
 
-* {
-  margin: 0;
-  box-sizing: border-box;
+:root {
+  --highlight: #b9b9b9;
+  /* --bg-main: #121212; */
+  --bg-main: #17141d;
+  --secondary: #b4a8c5;
 }
 
 body {
-  font-family: "roboto", sans-serif;
-  background-color: #e3e3e3;
-  overflow: hidden;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Onest", sans-serif;
+  background-color: var(--bg-main);
+  color: var(--highlight);
 }
 
 .main-wrapper {
-  height: 100vh;
-  width: 100vw;
 }
 
-.header {
-  background-color: azure;
-  height: 20vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-sizing: 0 10px 8px 0 rgba(0, 0, 0, 0.1);
-}
-
-.header h1 {
-  transition: 0.3s;
-}
-
-.header h1:hover {
-  cursor: default;
-  z-index: 0;
-  box-shadow: 60px 30px 60px red, 60px -30px 60px blue, -60px -30px 60px green,
-    -60px 30px 60px purple;
-}
-
-.sub-header {
-  height: 10vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 30px;
-}
-
-button {
-  padding: 10px 12px;
-  font-size: large;
-  cursor: pointer;
+header {
+  box-sizing: border-box;
+  text-align: center;
+  /* border-bottom: 4px solid var(--secondary); */
+  /* box-shadow: inset 2px 0 10px var(--secondary); */
+  padding: 10px;
+  height: 25vh;
 }
 
 main {
-  /* height: calc(70vh - 20px); */
-  height: 70vh;
-  display: grid;
-  grid-template-columns: 20% 80%;
-}
-
-form {
+  height: 75vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
-  margin-left: 25px;
+  align-items: center;
 }
 
-form label {
-  font-size: 16pt;
-}
-
-form input {
-  padding: 12px 20px;
-}
-
-form .form-row {
-  display: flex;
-  flex-direction: column;
-  margin-top: 24px;
-  padding: 10px;
-}
-
-form .form-row:last-child {
-  margin-top: 90px;
-  /* justify-content: baseline; */
-}
-
-.book-grid-wrapper {
+.grid-container {
+  width: 70vw;
   display: grid;
-  grid-template-columns: 33% 33% 33%;
-  /* Fix what happens after two rows */
-  grid-template-rows: 50% 50%;
-  padding: 10px;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  gap: 10px;
 }
 
 .book-card {
-  background-color: aliceblue;
-  padding: 20px;
-  box-sizing: border-box;
-  border-radius: 15px;
-  transition: 0.3s;
-}
+  /* border: 2px solid var(--secondary); */
 
-.book-card:hover {
-  margin-block: -5px;
-  margin-inline: -5px;
-  cursor: pointer;
-  box-shadow: 3px 3px;
-}
-
-.book-card h3 {
-  margin-bottom: 20px;
-  text-align: center;
-  font-size: 1.5rem;
-}
-
-.book-card h4 {
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.book-card h6 {
-  margin-bottom: 20px;
-  text-align: center;
-  font-size: 0.75rem;
+  max-width: 200px;
+  max-height: 130px;
+  padding: 1.5rem;
+  border-radius: 20px;
+  box-shadow: 0.5rem 0 3rem #000;
 }
