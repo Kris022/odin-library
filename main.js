@@ -24,6 +24,7 @@ function resetBookDisplay() {
 }
 
 function displayBooks() {
+  resetBookDisplay();
   for (let i = 0; i < myLibrary.length; i++) {
     const book = myLibrary[i];
 
@@ -35,9 +36,9 @@ function displayBooks() {
     </div>
     `;
 
-    gridContainer.appendChild(bookCard);
+    gridContainer.innerHTML += bookCard;
   }
 }
 
 addBookToLibrary(new Book("some title", "some author", "not started"));
-console.log(myLibrary);
+displayBooks();
