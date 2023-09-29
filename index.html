@@ -20,15 +20,15 @@
         </div>
 
         <dialog id="formDialog">
-          <form>
-            <input type="text" name="" id="" />
-            <input type="text" />
-            <select name="" id="">
-              <option value="">Not Started</option>
-              <option value="">Started</option>
-              <option value="">Read</option>
+          <form id="newBookForm">
+            <input type="text" name="title" placeholder="Book Title" />
+            <input type="text" name="author" placeholder="Book Author" id="bookAuthorTitle" />
+            <select name="status" id="">
+              <option value="not-started">Not Started</option>
+              <option value="started">Started</option>
+              <option value="read">Read</option>
             </select>
-            <button>Add Book</button>
+            <button id="addBook">Add Book</button>
           </form>
         </dialog>
 
