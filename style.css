@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600&display=swap");
+
+:root {
+  --main: #26a7de;
+}
+
+body {
+  background-color: #e3e3e3;
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Gabarito", sans-serif;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-rows: 100px 1fr;
+  height: 100vh;
+}
+
+header {
+  background-color: var(--main);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 20pt;
+  padding: 20px;
+}
+
+.add-book-btn:hover {
+  bottom: 3%;
+}
+
+main {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+}
+
+.book-grid {
+  border: 1px solid red;
+  flex: 1;
+  max-width: 80%;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(125px, 1fr));
+}
+
+.book-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 17px;
+}
+
+.add-book-btn {
+  position: absolute;
+  bottom: 2%;
+  right: 1%;
+  background-color: var(--main);
+  font-size: 40pt;
+  color: white;
+  border: 1px solid transparent;
+  padding: 10px 25px;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: bottom 0.3s;
+}
